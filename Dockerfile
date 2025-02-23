@@ -1,4 +1,4 @@
-FROM python:3.14.0a5-slim
+FROM python:3.12.0a4-alpine3.17
 # update apk repo
 RUN echo "https://dl-4.alpinelinux.org/alpine/v3.10/main" >> /etc/apk/repositories && \
     echo "https://dl-4.alpinelinux.org/alpine/v3.10/community" >> /etc/apk/repositories
@@ -13,8 +13,8 @@ RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/
 RUN wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.30-r0/glibc-bin-2.30-r0.apk
 
 RUN apk update && \
-    apk add openjdk23-jre curl tar && \
-    curl -o allure-2.32.2.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.13.8/allure-commandline-2.13.8.tgz && \
+    apk add openjdk11-jre curl tar && \
+    curl -o allure-2.32.2.tgz -Ls https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/2.32.2/allure-commandline-2.32.2.tgz && \
     tar -zxvf allure-2.32.2.tgz -C /opt/ && \
     ln -s /opt/allure-2.32.2/bin/allure /usr/bin/allure && \
     rm allure-2.32.2.tgz
