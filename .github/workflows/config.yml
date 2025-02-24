@@ -1,4 +1,4 @@
-ame: UI Tests
+name: UI Tests
 
 on: workflow_dispatch
 
@@ -37,7 +37,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.AUTOOHRM__TOKEN }}
+          token: ${{  secrets.AUTOOHRM__TOKEN }}
           branch: gh-pages
           folder: allure-report
           clean: true
