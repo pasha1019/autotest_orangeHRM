@@ -1,1 +1,1 @@
-{"uid":"b1a8273437954620fa374b796ffaacdd","children":[{"name":"Profile functions","children":[{"name":"Change profile name","uid":"e729b449d3a9b744","parentUid":"03baf50519cfc74072772d95e0ac2d76","status":"passed","time":{"start":1740405911208,"stop":1740405919059,"duration":7851},"flaky":false,"newFailed":false,"newPassed":false,"newBroken":false,"retriesCount":0,"retriesStatusChange":false,"parameters":[],"tags":["smoke"]}],"uid":"03baf50519cfc74072772d95e0ac2d76"}],"name":"behaviors"}
+{"uid":"b1a8273437954620fa374b796ffaacdd","children":[],"name":"behaviors"}
