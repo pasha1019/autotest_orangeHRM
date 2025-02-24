@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   regression:
-    #image: python:3.12.0a4-alpine3.17
+    image: userdocker1011/autoqa_python:latest
     build:
       context: .
       dockerfile: Dockerfile
